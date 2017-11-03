@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width; initial-scale=1.0;'>
+    <meta charset="utf-8"/>
+    <title>Designer</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../css/designer.css" media="screen" />  
+</head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+    
+<body>
+    <div class="main">
+        <header>
+            <h1><a href="index.html"><img id="logo" src="../img/cassinaLogo.png" alt="cassina"></a>
+            <a id="searchIcon"><img alt="search" src="../img/loupe.png"></a>
+        </h1>
+
+                <form action="/search" id="searchthis" method="get">
+                <input id="search" name="q" type="text" placeholder="" /><!--
+                --><input id="search-btn" type="submit" value="" />
+                </form>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span>accueil</span></a></li>
+                    <li>|</li>
+                    <li><a href="certificat.html"><span>authenticité</a></span></li>
+                    <li>|</li>
+                    <li><a href="designer.html"><span>designer</span></a></li>
+                    <li>|</li>
+                    <li><a href="#"><span>société</span></a></li>
+                    <li>|</li>
+                    <li><a href="contact.html"><span>contact</span></a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    
+    <section class="article-designer">
+            <h3><span>Le Corbusier, Jeanneret, Perriand</span></h3>
+            <article><img alt="le corbusier biographie" src="../img/lecorbusier.jpg"></article>
+        
+            <article>
+            <p>C'est en 1922 que Le Corbusier installe son atelier d'architecture rue de Sèvres. Il travaille avec son cousin, Pierre Jeanneret. La relation très forte entre les deux hommes les conduira à mener ensemble de nombreuses recherches, projets et réalisations. En octobre 1927, ils engagent une jeune architecte, Charlotte Perriand, qui à l'époque bénéficie d'une certaine notoriété. Leur collaboration durera jusqu'en 1937, et se révèlera extrêmement fructueuse, notamment pour ce qui concerne la création de meubles. La complicité entre les trois auteurs favorisera la production d'objets d'une qualité artistique et culturelle exceptionelle. Elle aura également des effets bénéfiques sur leur activité professionelle.</p>
+            </article>
+            <article>
+            <p>C'est avec Charlotte Perriand que les deux architectes abordent la question de "l'équipement de la maison". Leur collaboration aboutira à la réalisation de projets très innovants qui seront aussi de vraies réussites commerciales.
+Aujourd'hui encore, grâce à la politique éditoriale de Cassina, ces produits suscitent toujours le plus vif intérêt aussi bien en raison de la qualité de leur fabrication, de leur valeur culturelle, ce dont témoigne la curiosité suscitée par l'édition de tout nouveau modèle de la collection. 
+            </p>   
+            <p>
+                <a href="http://www.fondationlecorbusier.fr/">Fondation Le Corbusier</a>
+            </p>
+            </article>
+        </section>
+        
+
+        <footer>
+            <div>
+                <ul class="social-channels">
+                   <li class="transition-0-5-ease">
+                       <a href="https://www.facebook.com" target="_blank">
+                           <span class="icon-facebook"></span>
+                       </a>
+                    </li>
+                    <li class="transition-0-5-ease">
+                        <a href="https://twitter.com" target="_blank">
+                            <span class="icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="transition-0-5-ease">
+                        <a href="https://www.xing.com" target="_blank">
+                            <span class="icon-vimeo"></span>
+                        </a>
+                    </li>
+                    <li class="transition-0-5-ease">
+                        <a href="http://de.linkedin.com" target="_blank">
+                            <span class="icon-flickr"></span>
+                        </a>
+                    </li>
+                    <li class="transition-0-5-ease">
+                        <a href="https://www.behance.net" target="_blank">
+                            <span class="icon-github"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="contact">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">Conditions générales de vente</a>
+                        </li>
+                        <li>
+                            <a href="#">Certificats d’authenticité</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    </div> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="../js/jquery.scrollUp.min.js"></script>
+        <script src="../js/comportement.js"> </script>
+        <script>
+      $(function() {
+        $(".rslides").responsiveSlides();
+      });
+        </script>
+</body>
+</html>

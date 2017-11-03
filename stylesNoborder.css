@@ -1,0 +1,649 @@
+/***********************************************/
+/*                   GENERALITES               */
+/***********************************************/
+
+body {
+    /*background: #333333 url(images/page-bg.jpg);*/
+    background-color: black;
+    margin: 0px;
+    font: 400 15px Arial, sans-serif;
+    color: #6a6969;
+}
+
+h1 {
+    
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0.25em;
+    color: #fff; 
+    text-transform: uppercase;
+}
+
+h2 {
+    font: 100 16px "Open sans", sans-serif;
+    
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: white;
+}
+
+h3 {
+    font: 100 18px 'Open sans', sans-serif;
+    color: white;
+}
+
+ul#main-menu, ul#service-icons, ul#work-thumbs, ul#sm-links {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: white;
+}
+
+a img {
+    border: 0px;
+}
+
+p {
+    font-family: "Open Sans";
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 1.5;
+    letter-spacing: 0.075em;
+    font-style: italic;
+}
+
+#fullPage{
+	/*width:950px;
+	margin:0px auto 300px auto;
+	background:url(images/body-bg.png);
+	overflow:auto;
+	padding-bottom:100px;*/
+    position : relative ;
+    overflow: hidden;
+}
+
+/***********************************************/
+/*                   HEADER                    */
+/***********************************************/
+
+/* VIDEO */
+video#bgvid {
+    /*right: 0; 
+    bottom: 0;*/
+    min-width: 100%; 
+    min-height: 100%;
+    width: 50%; 
+    height: auto; 
+    margin: 0;
+    z-index: -100;  
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+figure {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+figure video {
+  mix-blend-mode: multiply;
+}
+
+#fullPage ul#main-menu {
+    list-style-type: none;
+}
+
+/* Permet de centrer le titre "design" */
+#fullPage>h1.hero-title {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 6%;
+    right: 0;
+    left: 0;
+    width: 35%;
+    text-transform: none;
+    letter-spacing: 0.075em;
+    font-size: 2em;
+}
+/* Permet de centrer la fleche */
+.scroll-icon {
+    position: absolute;
+    right: 50%;
+    top: 90vh;
+}
+.scroll-icon img {
+    max-width: 30px; 
+    max-height: 30px;
+}
+
+
+#header {
+    width: 864px;
+    height: 115px;
+    background-color: #222222;
+    padding: 0px 43px;
+    top: 0px;
+    left: 50%;
+    margin: 0 0 0 -475px;
+    z-index : 100 ;
+    position: relative;
+    position: fixed;
+}
+#header #image-fixed {
+    position: absolute;
+    position:fixed;
+    top: 35px;
+    left: 180px;
+    z-index:0;
+}
+#header #image-fixed a img{
+    max-width: 50%;
+	height: auto;
+}
+#header #logo {
+    padding-top: 35px;
+    float: left;
+}
+#header #logotel {
+    padding-top: 65px;
+    float: left;
+}
+
+#header #main-menu {
+    float: right;
+    padding-top: 45px;
+}
+
+#header #main-menu li {
+    float: left;
+    list-style: none;
+    margin-left: 27px;
+    font-family: "brandon-grotesque", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+/****************************************************/
+/*                SECTION A PROPOS                  */
+/****************************************************/
+#about .content h2 .important {
+    color:#999;
+}
+#about h2, p {
+    margin-top: 0px;
+}
+#about {
+    line-height: 20px;
+}
+
+#about {
+    margin: 0px 43px;
+}
+#about h1 {
+    width: 60vw;
+    line-height: 60px;
+    font-size: 3vw;
+
+}
+#about h1 span {
+    font-size: 30px;
+}
+#about article h2 {
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.45em;
+}
+
+#about article p {
+    font-size: 18px;
+    
+}
+#about article p {
+    font-size: 18px;
+    
+}
+
+
+#about .content {
+    overflow: auto;
+}
+
+
+
+#about .content img.portrait {
+    float: left;
+    margin-right: 40px;
+    border: 5px solid white;
+}
+
+#about .content article p:nth-of-type(n+2) {
+    font-style: normal;
+}
+#about .content p.tel {
+    font: 400 18 "Open Sans", sans-serif;
+}
+#about .content p span {
+    /*text-decoration: underline;*/
+    color: white;
+}
+#about .content .tel .logoTel {
+    padding-right: 10px;
+    width: 20px;
+}
+
+#about .content #service-icons {
+    margin-top: 20px;
+}
+
+#about .content #service-icons li{
+	display:block;
+	width:108px;
+	height:108px;
+	text-indent:-9999px;
+	list-style:none;
+	float:left;
+	margin-right:30px;
+}
+
+#about .content #service-icons li.services-design {
+    background: url(images/icon-1.png) no-repeat;
+}
+
+#about .content #service-icons li.services-mobile {
+    background: url(images/icon-2.png) no-repeat;
+}
+
+#about .content #service-icons li.services-film {
+    background: url(images/icon-3.png) no-repeat;
+}
+
+#about .content #service-icons li.services-photo {
+    background: url(images/icon-4.png) no-repeat;
+}
+#about .content ul { 
+    padding-left: 300px;
+    padding-top: 0px;
+}
+
+/*************************/
+/*  debut anim  icones   */
+/*************************/
+
+
+ ul#top-social {
+    padding: 0px;
+    height: 26px;
+    width: 95px;
+/*  background: #6B9A49;*/ 
+    color: #fff;
+    position: absolute;
+     top:0 ;
+    right: -100px;
+    padding-top: 170px;
+}
+ul#top-social li {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+ul#top-social a.fermer,
+a.ouvrir {
+    text-decoration: none;
+    position: absolute;
+    right: 110px;
+    top: 170px;
+    text-indent: -9999px;
+    display: block;
+    width: 26px;
+    height: 26px; 
+}
+
+a.ouvrir {
+    right: 10px;
+    top: 185px;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+ul#top-social {
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+ul#top-social a.fermer{ 
+    background: url(images/menu_ferme.png) no-repeat;
+    background-size: 26px 26px;
+}
+
+
+/* #body = ouvert */
+#body:target ul#top-social{
+    right: 2.5em;
+}
+
+#body:target a.fermer {
+    top: 170px;
+}
+#body:target a.ouvrir {
+    display: none;  
+}
+
+
+
+/* menu icones */
+
+#top-social .facebook {
+    text-indent: -9999px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(images/sm-facebook-icon.png) no-repeat;
+}
+#top-social .twitter{
+	text-indent:-9999px; 
+	display:block; 
+	width:31px; 
+	height:24px; 
+	background:url(images/sm-twitter-icon.png) no-repeat;
+}
+#top-social .linkedin{
+	text-indent:-9999px; 
+	display:block; 
+	width:26px; 
+	height:26px; 
+	background:url(images/sm-linkedin-icon.png) no-repeat;
+}
+
+
+
+
+
+/****************************************************/
+/*                EXPERIENCE SECTION                */
+/****************************************************/
+
+#experience {
+    margin: 0px 43px;
+    padding-top: 115px;
+    overflow: hidden;
+}
+#experience .content {
+    margin: 0 auto;
+    width: 90%;
+    overflow: auto;  
+}
+#experience .content h2 {
+    color:white;
+    /*padding-bottom: 10px;*/
+    text-decoration : underline;
+}
+#experience .content span:nth-child(2n+1) {
+   
+}
+#experience .content span {
+   color: white;
+}
+#experience .col{
+	float: left;
+    margin-right: 5%;
+    width: 20%;
+}
+#experience .col-mid {
+    margin-right: 5%;
+    width: 20%;
+}
+#experience .col2{
+	float: left;
+    width: 25%;
+}
+#experience .content .col2 h2{
+	text-decoration : underline;
+}
+
+#experience .content p{
+	color: gray;
+}
+
+#experience p {
+    
+    color:white; 
+}
+
+
+/****************************************************/
+/*                   TRAVAIL SECTION                */
+/****************************************************/
+
+#work {
+    margin: 0px 43px;
+    padding: 115px 0px 100px 0px;
+}
+
+#work .content {
+    overflow: auto;
+    background-color: dimgrey;
+}
+
+#work #work-thumbs li {
+    list-style: none;
+    float: left;
+    margin: 0px 20px 15px 0px;
+    padding: 0px;
+}
+
+#work #work-thumbs li:nth-child(3n+3) {
+    margin: 0 20px 15px 0;
+}
+
+#work #work-thumbs li:nth-child(4n+4) {
+    margin: 0 0px 15px 0;
+}
+
+#work #work-thumbs li img:last-child {
+    width: 280px;
+}
+
+/********** travaux persos *************/
+#work #work-perso li {
+    list-style: none;
+    float: left;
+    margin: 0px 20px 15px 0px;
+    padding: 0px;
+}
+
+#work #work-perso li.last {
+    margin: 0px;
+}
+
+#work #work-perso li:nth-last-of-type(1) {
+    margin: 0px 0px 15px 20px;
+}
+
+#work h2 {
+    font-size: 12px;
+    text-align: center;
+}
+
+#work img {
+	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+	-moz-transition: all 0.5s ease; /* Firefox */
+	-o-transition: all 0.5s ease; /* IE 9 */
+	-ms-transition: all 0.5s ease; /* Opera */
+	transition: all 0.5s ease;
+	
+} 
+#work img:hover{
+	-webkit-transform:scale(1.05); /* Safari and Chrome */
+	-moz-transform:scale(1.05); /* Firefox */
+	-ms-transform:scale(1.05); /* IE 9 */
+	-o-transform:scale(1.05); /* Opera */
+	transform:scale(1.05);
+}
+
+/* centre mon ul (mes vignettes) ds div */
+#work .content #work-thumbs {
+    margin: 0 auto;
+    width: 89%;
+}
+
+/* Flip horizontal de l'image Goldo 
+#work .img-hor {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}*/
+
+/*#work .content li:nth-child(1n+6) img {
+    width: 50%;
+}*/
+
+/****************************************************/
+/*                    CONTACT SECTION               */
+/****************************************************/
+#connect {
+    margin: 0px 43px;
+    padding-top: 115px;
+}
+
+#connect .content {
+    overflow: auto;
+}
+
+#connect #form {
+    width: 410px;
+    float: left;
+}
+#connect #form span{
+    color: #999;
+	display:block;
+	float:left;
+	width:100px;
+	padding-top:5px;
+	font: 400 14px/16px 'Bree Serif', Georgia, serif;
+}
+#connect #form input{
+	float:left;
+	width:255px;
+	border:0px;
+	color:#3b3b3b;
+	padding:10px 10px 10px 30px;
+	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
+	margin-bottom:10px;
+}
+#connect #form textarea{
+	float:left;
+	border:0px;
+	width:255px;
+	height:100px;
+	padding:10px 10px 10px 30px;
+	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
+	color:#3b3b3b;
+}
+
+#connect #form input.name {
+    background: #222222 url(images/icon-user.png) no-repeat 10px 8px;
+}
+
+#connect #form input.email {
+    background: #222222 url(images/icon-mail.png) no-repeat 10px 9px;
+}
+
+#connect #form textarea.message {
+    background: #222222 url(images/icon-message.png) no-repeat 10px 8px;
+}
+
+#connect #form input.submit {
+    width: 75px;
+    height: 30px;
+    float: right;
+    padding: 0px 0px 5px 0px;
+    margin: 10px 16px 0px 0px;
+    background: #222222;
+    color: #6a6969;
+    font: 400 14px/16px 'Bree Serif', Georgia, serif;
+}
+
+#connect #social-footer{
+	width:300px;
+	float:left;
+	margin-left:75px;
+}
+#connect #social-footer #sm-links {
+    margin-top: 25px;
+}
+
+#connect #social-footer #sm-links li {
+    list-style: none;
+    float: left;
+}
+#connect #social-footer #sm-links li a{
+	display:block;
+	text-indent:-9999px;
+	width:26px; 
+	height:26px;
+	margin-right:10px;
+}
+#connect #social-footer #sm-links li a.facebook {
+    background: url(images/sm-facebook-icon.png) no-repeat;
+}
+
+#connect #social-footer #sm-links li a.twitter {
+    background: url(images/sm-twitter-icon.png) no-repeat;
+    width: 31px;
+}
+
+#connect #social-footer #sm-links li a.dribble {
+    background: url(images/sm-dribble-icon.png) no-repeat;
+}
+
+#connect #social-footer #sm-links li a.vimeo {
+    background: url(images/sm-vimeo-icon.png) no-repeat;
+    width: 27px;
+}
+
+#connect #social-footer #sm-links li a.google {
+    background: url(images/sm-google-icon.png) no-repeat;
+}
+
+#connect #social-footer #sm-links li a.youtube {
+    background: url(images/sm-youtube-icon.png) no-repeat;
+    width: 28px;
+}
+
+#connect #social-footer #sm-links li a.linkedin {
+    background: url(images/sm-linkedin-icon.png) no-repeat;
+}
+/****************************************************/
+/*                          MISC                    */
+/****************************************************/
+.top-divider,
+.bottom-divider {
+    width: 100%;
+    height: 9px;
+    background: url(images/divider1B.png) repeat-x;
+    clear: both;
+}
+
+.top-divider {
+    margin-bottom: 40px;
+}
+
+.bottom-divider {
+    margin-top: 40px;
+}

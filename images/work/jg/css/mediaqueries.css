@@ -1,0 +1,184 @@
+/* Règles pour des écrans compris entre 500px et 700px */
+/*@media screen and (min-width: 500px) and (max-width:700px) {
+article {
+width : 100%
+}
+h1{
+color:red ;
+}
+}
+@media screen and (min-width: 701px) { /* Règles pour des écrans supérieur à 701px */
+/*article {
+width : 50%
+}
+h1{
+color:blue;
+}
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+/* version smartphone */
+
+@media (max-width: 480px) {
+    
+    html, body {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+    
+/**********/  
+/* HEADER */
+/**********/
+    
+    header {
+        height: auto;
+        position: static;
+        text-align: center;
+    }
+    header nav {
+        background-color: #ff6666;
+        margin-top: 0px;
+    }
+    header nav li {
+        width: 100%;
+        padding: 21px;
+    }
+    header nav ul li, nav {
+        float:none;
+        
+    }
+    
+    header h1 {
+        float: none;
+        width: 100%;
+        margin-top: 0px;
+    }
+        
+    header div.header-contact {
+        display: none;
+    }
+    
+    header li a:link, visited {
+        color: white;
+    }
+
+
+/**********/  
+/*  MAIN  */
+/**********/
+
+div.intro-text {
+    width: 100%;
+}
+
+div.main section.wrapper div.intro-image div.intro-text h1 {
+    font-size: 10vw;
+    text-align: center;   
+}
+
+div.main div.intro-image {
+    background: none;
+}
+
+div.main div.intro-text p {
+    padding: 0px 20px;
+    font-size: 3vw; 
+}
+
+div.intro-text h2 {
+    font-size: 3vw;
+    text-align: center;
+    width: 100%;
+    line-height: 0px;
+}
+
+div.intro-text h2 strong {
+    font-size: 3vw;     
+}
+
+div.intro-text h3 {
+    font-size: 3vw;  
+    padding-left: 20px;
+}
+
+
+div.intro-text ul.social-channels {
+    text-align: center;
+}
+
+div.intro-text ul.social-channels li {
+    float: none;
+    display: inline-block;
+}
+
+/**********/  
+/*  WORK  */
+/**********/
+
+div.bg_dark h4#wp-work {
+    font-size: 10vw;
+    margin-top: 50px;
+}
+
+div.bg_dark ul.work li {
+    float: none;
+    width: 100%; 
+}
+
+div.bg_dark ul.work li img{
+    max-width: 48.5%; 
+}
+
+/* ??? */
+div.bg_dark ul.work li a div.work-discription {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: lighter;
+}
+
+div.bg_dark ul.work li .work-discription span {
+    display: none;
+}
+
+/*************/  
+/*  CONTACT  */
+/*************/
+
+div.bg_red a.contact-icon {
+    background-size: 50%;
+}
+
+div.bg_red h4 {
+    font-size: 10vw;
+}
+
+
+/*************/  
+/*  FOOTER   */
+/*************/
+    
+footer {
+    width: 100%;
+}
+
+    
+footer ul.footer-nav  {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+
+
+
+
+
+
+
+

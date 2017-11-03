@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width; initial-scale=1.0;'>
+    <meta charset="utf-8"/>
+    <title>Contact</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../css/contact.css" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+     
+</head>
+    
+<body>
+    <div class="main">
+        <header>
+            <h1><a href="index.html"><img id="logo" src="../img/cassinaLogo.png" alt="cassina"></a>
+                <a id="searchIcon"><img alt="search" src="../img/loupe.png"></a>
+            </h1>
+
+            <!-- Barre de recherche -->
+                <form action="/search" id="searchthis" method="get">
+                <input id="search" name="q" type="text" placeholder="" /><!--
+                --><input id="search-btn" type="submit" value="" />
+                </form>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span>accueil</span></a></li>
+                    <li>|</li>
+                    <li><a href="certificat.html"><span>authenticité</a></span></li>
+                    <li>|</li>
+                    <li><a href="designer.html"><span>designer</span></a></li>
+                    <li>|</li>
+                    <li><a href="#"><span>société</span></a></li>
+                    <li>|</li>
+                    <li><a href="contact.html"><span>contact</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+    <section id="formulaire_contact">
+        <h3><span>Nous &eacute;crire</span></h3>
+        <form>
+            <fieldset>
+                <label for="name">Votre nom :</label>
+                <input type="text" name="nom" id="name">
+                <label for="firstname">Votre prénom :</label>
+                <input type="text" name="prenom" id="firstname">
+                <label for="mail">Votre adresse mail :</label>
+                <input type="text" name="mail" id="mail">
+            </fieldset>
+            <fieldset>
+                <label>Message :</label>
+                <textarea></textarea>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+        
+        
+    
+    <section id="coordonnees_contact">
+        <h3><span>Coordonnées</span></h3>
+        <ul>
+            <li>
+                <section>
+                    <p>Authentics-Design</p>
+                    <p>171-173 rue de paradis</p>
+                    <p>13006 Marseille</p>
+                </section>
+                <section>
+                    <p>Siège social</p>
+                    <p>Cassina S.p.A</p>
+                    <p>Sede legale: 1, Via L. Busnelli</p>
+                    <p>20821 Meda</p>
+                </section>
+                <section>
+             <p>cassina@cassina.com</p>
+                <p>tél : 04-91-37-68-25</p>
+                </section>
+            </li>
+        </ul>
+    </section>
+  
+    
+    <footer>  
+        <div>
+            <ul class="social-channels">
+               <li class="transition-0-5-ease">
+                   <a href="https://www.facebook.com" target="_blank">
+                       <span class="icon-facebook"></span>
+                   </a>
+                </li>
+                <li class="transition-0-5-ease">
+                    <a href="https://twitter.com" target="_blank">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </li>
+                <li class="transition-0-5-ease">
+                    <a href="https://www.xing.com" target="_blank">
+                        <span class="icon-vimeo"></span>
+                    </a>
+                </li>
+                <li class="transition-0-5-ease">
+                    <a href="http://de.linkedin.com" target="_blank">
+                        <span class="icon-flickr"></span>
+                    </a>
+                </li>
+                <li class="transition-0-5-ease">
+                    <a href="https://www.behance.net" target="_blank">
+                        <span class="icon-github"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <section class="contact">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Conditions générales de vente</a>
+                    </li>
+                    <li>
+                        <a href="#">Certificats d’authenticité</a>
+                    </li>
+                    <li>
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>   
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="../js/jquery.scrollUp.min.js"></script>
+        <script src="../js/comportement.js"> </script>
+        <script>
+      $(function() {
+        $(".rslides").responsiveSlides();
+      });
+        </script>
+</body>
+</html>

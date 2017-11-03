@@ -1,0 +1,769 @@
+/*************************************/
+/************** GENERAL **************/
+/*************************************/
+
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; /* =12px */
+    line-height: 1.6;
+}
+
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+/*************************************/
+/********** TYPOS / ICONES ***********/
+/*************************************/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-wcdog9');
+	src:url('../fonts/icomoon.eot?#iefix-wcdog9') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-wcdog9') format('woff'),
+		url('../fonts/icomoon.ttf?-wcdog9') format('truetype'),
+		url('../fonts/icomoon.svg?-wcdog9#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e600";
+}
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-twitter:before {
+	content: "\e602";
+}
+.icon-vimeo:before {
+	content: "\e603";
+}
+.icon-flickr:before {
+	content: "\e604";
+}
+.icon-github:before {
+	content: "\e605";
+}
+
+/******************************************/
+/***************** SLIDER  ****************/
+/******************************************/
+
+/* on cache l'ul desktop affichée ds slider */
+.rslides > li > ul {
+    display: none;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 2px solid black;  
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+#slider4 li {
+    position: relative;
+}
+/* réglages des fleches */
+header section {
+    position: relative;
+}
+header #sliderControls {
+    position: absolute;
+    width: 90%;
+    top: 132.5px;
+    z-index: 5;
+}
+header #sliderControls img {
+    height: 10vw;
+    margin-top: 7vw;
+    max-height: 55px;
+    width: 95%;
+}
+header #slider-prev {
+    float: left;
+    padding-left: 2vw;
+}
+header #slider-next {
+    float: right;
+    padding-right: 2vw;
+}
+/* select les 2 derniers a */
+header section a:nth-last-child(-n+2){
+
+}
+header section a:visited {
+    color: black;
+}
+section .caption {
+    background-color: rgba(204, 0, 0, 0.8);
+    bottom: 0;
+    color: white;
+    padding: 2vw;
+    position: absolute;
+    width: 100%;
+}
+
+
+/******************************************/
+/*****************  MAIN   ****************/
+/******************************************/
+.main {
+    background-color: white;
+    text-align: center;
+}
+
+/*
+.wrap h1 a:nth-child(2) img  {
+        height: 5vw;      
+}
+#wrapper {
+    padding: 5vw;
+}*/
+/******************************************/
+/****************  HEADER   ***************/
+/******************************************/
+header img#logo {
+    width: 20vw;
+}
+header {
+    height: auto;
+    position: static;
+    background-color: white;
+}
+header h1 {
+        padding: 5% 0 2%;      
+}
+
+/* barre de navigation */
+header nav {
+    margin-top: 0;
+}
+header nav ul li { 
+    background-color: black;
+    list-style: none;
+    border-top: 1px solid white;
+    padding: 2% 0;
+}
+header nav ul li:hover
+{
+    background-color: #cc0000;
+    color: #FFF;
+}
+header nav ul li:nth-of-type(even){
+    display: none;
+}
+header nav ul li a  {
+    
+}
+header section {
+    padding: 5vw;
+}
+
+
+/* Barre de recherche */
+
+header form {
+    display: none;
+}
+header h1 a:nth-child(1){
+    
+}
+header h1 a:nth-child(2){
+    float: right;
+    margin-left: -20%;
+}
+header h1 a:nth-child(2) img{
+    height: 8vw;
+    padding-right: 5vw;
+    cursor: pointer;
+}
+
+/******************************************/
+/************  SECTION TITRE   ************/
+/******************************************/
+section#titre {
+    background-color: #cc0000;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+section#titre h2#wp-work {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 90%;
+    padding-top: 4.5%;
+}
+section#titre h3 {
+    color: white;
+    padding: 25px 0px 5px 0px;
+    font-weight: 500;
+}
+section#titre span {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+section#titre img {
+    width: 50vw;
+    padding-bottom: 3%; 
+}
+
+/******************************************/
+/***********  SECTION GALERIE   ***********/
+/******************************************/
+#wrapper {
+    margin-top: 5%;
+    padding: 5vw;
+    
+}
+#galerie {
+    background-color: white;
+    /*padding: 5vw;*/
+}
+#galerie img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+#galerie li {
+    position:relative;
+}
+#galerie h2 {
+    background: rgba(0, 0, 0, 0) url("../img/bandeTitre.jpg") repeat-x scroll center center;
+    font-size: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+#galerie h2 span {
+    background: #fff none repeat scroll 0 0;
+    padding: 0 2vw;
+}
+
+#galerie #list li {
+    padding-top: 8%;
+}
+
+#galerie #list section {
+    bottom: 5%;
+    position: absolute;
+    width: 100%;
+}
+
+#galerie #list section h3 {
+    font-weight: 100;
+    color: #cc0000;
+    text-transform: uppercase;
+    font-size: 4.5vw;
+    line-height: 80%;
+}
+#galerie #list section h4 {
+    font-weight: 100;
+    color: black;
+    text-transform: lowercase;
+    font-size: 4.5vw;
+}
+/******************************************/
+/***********  SECTION GALERIE   ***********/
+/******************************************/
+aside {
+    padding-top: 10%;
+}
+aside .leg {
+    position: relative;
+}
+aside h4 {
+    color: white;
+    font-size: 2.5vw;
+    position: absolute;
+    bottom: 130px;
+    width: 100%;
+}
+aside span {
+    font-size: 4vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 3px solid #cc0000;
+    border-bottom: 3px solid #cc0000;
+    width: calc(100% - 35vw);
+    margin-left: calc(100% - 85vw);
+}
+aside ul li a img {
+    padding-top: 3vw;
+}
+
+
+/******************************************/
+/***********  SECTION FOOTER    ***********/
+/******************************************/
+footer {
+    background-color: black;
+    padding: 3%;
+    clear: both;
+}
+footer .social-channels {
+    /*left: 50%;*/
+    
+    /*width: 330px;*/
+}
+footer .social-channels li {
+    background: #cc0000 none repeat scroll 0 0;
+    margin: 0 3.5px;
+    display: inline-block;
+    border-radius: 23px;
+}
+.social-channels li a {
+    color: white;
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    width: 46px;
+}
+footer .contact {
+    padding-top: 10px;
+}
+footer .contact li:first-letter {
+    font-weight: lighter;
+     text-transform: capitalize;
+}
+footer .contact li {
+    line-height: 25px;
+}
+footer .contact li a {
+    color: white;
+    font-weight: 100;
+    font-size: 4vw;
+    text-transform: capitalize;
+}
+/* SCROLL UP */
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 5vw;
+    transform: rotate(-90deg);
+    background: url(../img/flecheScroll.png) no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+
+
+/*#########################################*/
+/*#########################################*/
+/*############  MEDIAQUERIES  #############*/
+/*#########################################*/
+/*#########################################*/
+
+/******************************************/
+/**********  VERSION TABLETTE   ***********/
+/******************************************/
+
+@media only screen and (min-width: 640px) {
+    body {
+        
+    }
+  .li {
+    width: 33.3333333%;
+  }
+    header {
+        background-color: #ccc;
+    }
+    h1 {
+        width: 50%;
+    }
+/*************************************/
+/************  HEADER   **************/
+/*************************************/
+    
+/* barre de navigation */
+header nav {
+    background-color: black;
+}
+header nav ul li:nth-of-type(even){
+    display: inline-block;
+    color: #fff;
+    width: 1%;
+}
+header nav ul li {
+    border-top: none;
+    display: inline-block;
+    width: 17%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    vertical-align: center;
+}
+header nav ul li a:hover span
+{
+  border-bottom: 2px solid #cc0000;  
+}
+header nav ul li:hover
+{
+    background-color: transparent;
+    color: #FFF;
+} 
+/*header nav ul span:nth-of-type(1){
+    padding-right: 3%;
+}
+header nav ul span:nth-of-type(2){
+    padding: 0% 2%;
+}*/
+
+header a:link {
+    font-weight: 100;
+    text-transform: lowercase;
+}
+/* on cache l'ul desktop affichée ds slider */
+.rslides > li > ul {
+    display: none;
+}
+header #sliderControls {
+    top: 150px;
+}
+header section {
+    margin: auto;
+    padding: 4vw;
+    width: 66%;
+}
+header h1 {
+    width: 100%;
+}
+header {
+    background-color: white;
+}
+header img#logo {
+    width: 15vw;
+    text-align: center;
+}
+header ul span {
+    display: inline;
+    color: white;
+}
+
+/* barre recherche */
+header form {
+display: none;
+}
+header h1 a:nth-child(2){
+    float: right;
+    margin-left: -20%;
+}
+header h1 a:nth-child(2) img{
+    height: 35px;
+}
+/*************************************/
+/************  TITRE    **************/
+/*************************************/
+section#titre img {
+    width: 35vw;
+}
+section#titre h2#wp-work {
+    font-size: 3.5vw;
+    padding-top: 3%;
+}
+    
+/*************************************/
+/************  GALERIE   *************/
+/*************************************/
+#wrapper {
+    padding: 0px 20px;
+    
+}
+/* on passe la galerie sur 2 colonnes */
+#galerie ul li {
+    /*display:block;*/
+    width : 50%;
+    float:left;
+    padding: 0.8vw;
+}   
+#galerie #list section h3 {
+    font-size: 2.5vw;
+}
+#galerie #list section h4 {
+    font-size: 2.5vw;
+}    
+#galerie h2 {
+    font-size: 3vw;
+}
+
+/*************************************/
+/************   ASIDE    *************/
+/*************************************/
+aside li {
+    width : 50%;
+    float:left;
+    padding: 0.8vw;
+}
+aside span {
+    font-size: 2.5vw;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 0;
+    text-transform: uppercase;
+    width: calc((100% - 187px)) /2;
+}
+aside ul li a img {
+    padding-top: 5%;
+}
+aside h4 {
+    font-size: 1.6vw;
+    bottom: 15vw;
+    left: 11vw;
+    width: 50%;
+}
+    
+    
+/*************************************/
+/************   FOOTER   *************/
+/*************************************/
+footer {
+    clear:both; 
+}
+footer .contact li a {
+    font-size: 2.5vw;
+}
+footer .social-channels li {
+    margin: 0 2vw;
+}
+/* SCROLL UP */
+#scrollUp {
+    padding: 30px;
+}    
+    
+    
+}
+    
+    
+    
+/******************************************/
+/**********  VERSION DESKTOP   ************/
+/******************************************/
+
+
+@media only screen and (min-width: 960px) {
+    
+
+/***********************************/
+/******  barre de recherche   ******/
+/***********************************/ 
+
+/* on cache l'icone loupe des version mobiles */
+header h1 a:nth-child(2){
+    display: none;
+}
+/* on affiche la version desktop */
+header form {
+    display: inline-block;
+}
+#searchthis {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}    
+#searchthis input {
+    display: inline-block;
+    outline:0;
+    border:0;
+    margin:0;
+    vertical-align: top;
+}
+#searchthis input:nth-child(1) {
+    
+}
+#searchthis input:nth-child(2) {
+    height: 25px;
+    width: 25px;
+}
+/* Champ de saisie */
+#searchthis #search {
+  background-color: #cccccc;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-color: #dddddd;   /* Couleur de la bordure  */
+  padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+  font-family: Arial;   /* Police du texte */
+  font-size: 12px;   /* Taille de la police du texte */
+  font-weight: normal;   /* Graisse du texte */
+  letter-spacing: 1px;   /* Espacement des caractères */
+}
+#search-btn{
+    background: rgba(0,0,0,0);
+    background:url(../img/loupe.png) no-repeat 0 0;
+    background-size: 100%;
+    padding-bottom: 2%;   
+}  
+/* fin de la barre de recherche */
+    
+header>section {
+    width: 90%;
+}
+header img#logo {
+    width: 15%;
+    text-align: center;
+}   
+header>section>ul>li {
+    height: 45vw;
+    max-height: 500px;
+    background: #ccc;
+    position: relative;
+}
+    
+/* barre de navigation */
+  
+/* slider */
+.rslides img {
+    width: 50%;
+    margin-left: 3%;
+}    
+.rslides>li>ul {
+    display: block;
+    /*background-color: yellow;*/
+    line-height: 40px;
+    position: absolute;
+    right: 6vw;
+    text-align: left;
+    top: 8vw;
+}
+.rslides>li>ul>li {
+    display: block;
+    text-transform: capitalize;  
+} 
+.rslides>li>ul>li>span {
+    text-transform: capitalize;  
+}
+.rslides>li>ul>li>span:first-child {
+      
+}    
+
+/*************************************/
+/************  TITRE    **************/
+/*************************************/
+section#titre img {
+    width: 20%;
+    padding-bottom: 2%; 
+}   
+section#titre {
+    margin-bottom: 0%;
+}
+/*************************************/
+/*********  SECTION GALERIE  *********/
+/*************************************/
+
+#galerie h2 span {
+    background: #fff none repeat scroll 0 0;
+    font-size: 0.7em;
+}   
+#galerie ul li {
+    /*display:block;*/
+    width : 33.3%;
+    float:left;
+    padding: 0.8vw;
+} 
+#galerie #list section h3 {
+    font-size: 0.9em;
+}
+#galerie #list section h4 {
+    font-size: 0.85em;
+}
+
+/*************************************/
+/************   ASIDE    *************/
+/*************************************/
+aside h4 {
+    font-size: 0.8em;
+    left: 25%;
+    bottom: 140px;
+    width: 50%;
+}
+aside span {
+    font-size: 1em;
+    display: block;
+    margin-left: 35%;
+    width: 30%;
+    font-size: 0.9em;
+}
+aside ul li a img {
+    padding-top: 3%;
+}    
+
+/*************************************/
+/************   FOOTER   *************/
+/*************************************/    
+footer .contact li a {
+    font-size: 1em;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,277 @@
+/*********************/
+/*  Elements communs */
+/*********************/
+body, html {
+    font-family: Roboto, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+h2, h3  {
+    font-family : bebasregular, sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+/* liens et liens visités */
+a:link, a:visited  { 
+    text-decoration:none; 
+    color: #b9b9b9;
+    font-size: 16px;
+} 
+/* lien survolés et actifs */
+a:hover, a:active {
+    color: #e8663c;
+}
+
+.wrap {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/*********************/
+/*      HEADER       */
+/*********************/
+header h1 {
+    float: left;
+    width: 30%;
+    padding-top: 8px;
+}
+/* nav en float right et aligné à droite avec une largeur de 70% */
+header nav {
+    float: right;
+    width: 70%; 
+    text-align: right;
+}
+/* hauteur du head et de ligne */
+header {
+    height: 60px;
+    line-height: 60px;
+}
+/* on aligne les liens horiz avec 30 de marge à gauche */
+header nav > ul > li {
+    display: inline-block;
+    margin-left: 30px;
+}
+/* HOME en rouge */
+header .here {
+    color: red;
+}
+
+
+/*********************/
+/*  SECTION SLIDER   */
+/*********************/
+
+/* père en relative */
+section.slider {
+    position: relative;
+}
+/* on aligne les liens horiz et padding à droite */
+section.slider ul li {  
+    display: inline-block;
+    padding-right: 16px;
+    margin-bottom: 30px;
+}
+/* le dernier de la liste */
+section.slider ul li.stopli {  
+   padding-right: 0px;
+}
+/* encadré orange SLIDE ONE, on le met en fils (absolu) */
+section.slider section {
+    position: absolute; 
+    top: 290px;
+    left: 30px;
+    background: rgba(232, 102, 60, 0.8);
+    color: white;
+    width: 400px;
+    padding: 20px 20px;
+}
+
+/* bande oranges haut */
+div.fondSlider{
+width: 100%;
+height:50px;
+position:absolute;
+background-color:#f3b29d;
+}
+
+/************/
+/* ARTICLES */
+/************/
+div.wrap article {
+    display: inline-block;
+    width: 285px;
+    padding-right: 0px;
+    margin-right: 30px;
+}
+
+div.wrap article h2 {
+    font-size: 18px;
+    height: 45px;
+}
+
+div.wrap article h2.portfolio {
+    background-image: url(../img/engrenage.png);
+    background-repeat: no-repeat;
+}
+div.wrap article h2.service {
+    background-image: url(../img/icone-valide.png);
+    background-repeat: no-repeat;
+}
+
+/* on supprime la marge du dernier article */
+div.wrap article.socialart {
+    background-image: url(../img/icon-connected.png);
+    background-repeat: no-repeat;
+    margin-right: 0px;
+}
+/* Décalage des titres h2 */
+div.wrap article h2 {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 70px;
+    width: 200px;
+    color:#ff6633;
+}
+/* on écarte les lignes et marge en dessous des p */
+div.wrap article p {
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+/* bouton orange MORE */
+div.wrap article p.more {
+    width: 100px;
+    height: 40px;
+    background-color:#ff6633;
+    text-align:center; /* centrage horizontal */
+    line-height:40px; /* centrage vertical */
+    /* majuscule */
+    text-transform: uppercase;
+    margin-bottom: 45px;   
+}
+/* texte en blanc et police 30  */
+div.wrap article p.more a {
+    font-size: 25px;
+    color: white;  
+}
+
+/*********************/
+/*    RECENT WORK    */
+/*********************/
+
+/* bandes rayures en fond et texte orange */
+aside h2 {
+    background-image: url(../img/api.jpg);
+    background-position:100% 0%;
+    color:#ff6633;  
+}
+
+aside ul li {
+    display: inline-block;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+/* dernier elt de la liste on met son padding à 0 pour qu'il reste aligné */
+aside ul li:nth-of-type(4) {
+    padding-right: 0px;
+}
+
+aside ul li figure img {
+    margin-bottom: -4px;
+}
+
+/* text majuscule, fond blanc, contour gris */
+aside ul li figure figcaption {
+    text-transform: uppercase;
+    background-color:white;
+    border: 1px lightgrey solid;
+    height: 60px;
+    padding-left: 10px;
+}
+
+aside ul li figure figcaption h3 {
+    font-size: 14px;
+    color: lightgrey;
+    padding-top: 15px;
+}
+
+aside ul li figure figcaption p {
+    font-size: 12px;
+    color:#ff6633;
+    padding-top: 5px;
+}
+
+
+/*********************/
+/*      FOOTER       */
+/*********************/
+
+footer.coulFond1 {
+    background-color: #e8603c;
+}
+
+footer section {
+    display: inline-block;
+    width: 250px;
+    padding: 40px 30px 30px 30px;
+    vertical-align: top;
+    color: white;
+}
+
+footer section ul li {
+    display: inline-block;
+}
+
+footer section h2 {
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* selectionne le 1er paragraphe de la 1ere et 3eme section */
+footer section:nth-of-type(2n+1) p:nth-of-type(1) {
+    padding-bottom: 20px;
+}
+
+footer section p {
+    font-size: 14px;
+}
+
+/* select la 2eme section */
+footer section:nth-of-type(2) .coul {
+    color: orange;
+}
+
+footer section:nth-of-type(2) p:nth-of-type(odd) {
+    padding-bottom: 10px;
+}
+
+footer section:nth-of-type(2) p:nth-of-type(even) {
+    padding-bottom: 25px;
+}
+    
+/* select la 3eme section */
+
+/* selectionne le 3eme paragraphe de la 3eme section */
+footer section:nth-of-type(3) p:nth-of-type(3) {
+    padding: 5px 0px 25px 0px;
+}
+
+
+
+
+
+
+
+
+

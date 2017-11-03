@@ -1,0 +1,72 @@
+svg {
+
+    /*padding-top: 250px;*/
+    background: white;
+
+}
+
+#titre {
+    
+}
+
+.st1 {
+    fill:#00e492;
+    animation: hideshow2 2.5s ease infinite;
+}
+
+
+/* disparation de la sphere horizontale */
+@keyframes hideshow2 {
+    0% { opacity: 1; }
+    13% { opacity: 1; }
+    25% { opacity: 0; }
+    40% { opacity: 0; }
+    57% { opacity: 1; }
+}
+
+.st2 {
+    fill:#0ac6c6;
+    animation: hideshow 2.5s ease infinite;
+}
+/* disparation de la sphere verticale */
+@keyframes hideshow {
+    0% { opacity: 1; }
+    60% { opacity: 1; }
+    72% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 0.5; }   
+}
+.st3 {
+    fill:#00e492;
+    stroke-miterlimit:10;
+}
+.st4 {
+    fill:#0ac6c6;
+    stroke-miterlimit:10;
+}
+.st5 {
+    fill:#BABABA;
+}
+.st6 {
+    fill:#00e492;
+    stroke-miterlimit:10;
+}
+/*@keyframes popup {
+  0% {
+    transform: translateY(150px);
+  }
+  34% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}
+
+.capote {
+  transform: translateY(150px);
+  animation: popup 3s 1.5s ease infinite;
+}*/
