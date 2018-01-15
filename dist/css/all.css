@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .container#content {
-  background: orange; }
+  background: #800026; }
   .container#content .btn-search > button {
     background: violet; }
 
