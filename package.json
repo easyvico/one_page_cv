@@ -1,5 +1,5 @@
 {
-  "name": "tribute-to-nodejs",
+  "name": "gulp jade sass bootstrap kit",
   "version": "1.0.0",
   "description": "demo project using bootstrap, sass, jade, and gulp",
   "main": "index.js",
