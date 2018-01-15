@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.container#content {
+  background: orange; }
+  .container#content .btn-search > button {
+    background: violet; }
+
+.col-center {
+  margin: auto;
+  float: none !important;
+  clear: both; }
+
+#content {
+  margin-top: 40px;
+  font: 100% "Roboto", sans-serif;
+  font-size: 120%;
+  margin-bottom: 10px;
+  padding-bottom: 20px; }
+
+#headline-image {
+  width: 80%;
+  margin: 20px 10%;
+  background-color: #565656;
+  padding: 40px; }
+
+.em {
+  font-style: italic; }
+
+ul li {
+  list-style: none; }
+
+li {
+  line-height: 150%; }
+
+h1 {
+  font-size: 500%;
+  margin: 30px auto 20px; }
+
+form {
+  background: beige;
+  /* Bouton recherche */
+  /* Hauteur des éléments */ }
+  form .flex .group-select {
+    float: left;
+    width: 28%;
+    /* Bouton Neuf */
+    /* Bouton Km */
+    /* Bouton Prix */ }
+    form .flex .group-select:first-child {
+      background: orange; }
+    form .flex .group-select:nth-child(2) {
+      background: green;
+      width: 35%; }
+      form .flex .group-select:nth-child(2) > .dropdown-menu {
+        left: 28%; }
+    form .flex .group-select:last-child {
+      background: purple;
+      width: 37%; }
+      form .flex .group-select:last-child > .dropdown-menu {
+        left: 64%; }
+    form .flex .group-select > .btn {
+      width: 100%;
+      border-radius: 0;
+      background: white;
+      color: black; }
+      form .flex .group-select > .btn .caret {
+        margin-left: 6px; }
+  form .btn-search {
+    width: 100%; }
+    form .btn-search > .btn {
+      background: red;
+      border-radius: 0;
+      color: white;
+      line-height: 15px;
+      width: 100%; }
+      form .btn-search > .btn span {
+        display: block;
+        font-size: 11px; }
+  form input[type='text'], form button {
+    height: 50px;
+    border-radius: 0; }
+
+/****************/
+/* Mediaqueries */
+/****************/
+@media (max-width: 1199px) {
+  form {
+    background: pink; }
+    form .flex .group-select {
+      /* Bouton Km */
+      /* Bouton Prix */ }
+      form .flex .group-select:nth-child(2) > .dropdown-menu {
+        left: 26%; }
+      form .flex .group-select:last-child > .dropdown-menu {
+        left: 62%; } }
+
+@media (max-width: 1023px) {
+  form {
+    background: blue; }
+    form .flex {
+      margin-top: 20px; }
+      form .flex .group-select {
+        width: 33%;
+        /* Bouton Km */
+        /* Bouton Prix */ }
+        form .flex .group-select > .btn {
+          width: 100%; }
+        form .flex .group-select:nth-child(2) {
+          width: 33%; }
+          form .flex .group-select:nth-child(2) > .dropdown-menu {
+            left: 33%; }
+        form .flex .group-select:last-child {
+          width: 34%; }
+          form .flex .group-select:last-child > .dropdown-menu {
+            left: 66%; }
+    form .btn-search {
+      margin-top: 20px; } }
+
+/* Small screen */
+@media (min-width: 992px) and (max-width: 1023px) {
+  form {
+    background: lightblue; }
+    form .flex, form .btn-search {
+      margin-top: 0px; } }
+
+@media (max-width: 767px) {
+  form {
+    background: purple; }
+    form .flex .group-select > .btn.first {
+      margin-right: 10px; }
+    form .flex .group-select > .btn.second {
+      margin-right: 10px; } }
+
+.no-padding > [class*='col-'] {
+  padding-right: 0px;
+  padding-left: 0px; }

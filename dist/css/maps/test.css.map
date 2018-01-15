@@ -1,0 +1,1 @@
+{"version":3,"file":"test.css","sources":["test.scss"],"sourcesContent":[".container#content {\n    background: pink;\n}"],"mappings":"AAAA,AAAU,UAAA,AAAA,QAAQ,AAAC,CACf,UAAU,CAAE,IAAK,CACpB","names":[],"sourceRoot":"/source/"}

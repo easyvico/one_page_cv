@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+  head
+    title Tribute to Node.js
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css')
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", crossorigin="anonymous")
+    link(href="css/all.css" rel="stylesheet")
+    //link(href="css/searchbar.css")
+    script(src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+  body
+    .container#content
+    
+        form(name='search', method='post', action='https://achatvente.coachautomaif.fr/?site=coachauto')
+            .container-fluid
+                .row.no-padding
+                    .col-lg-6.col-md-5.col-sm-12
+                        input#search_param(type='hidden', name='search_param', value='all')
+                        input.form-control(type='text', name='x', placeholder='Rechercher une voiture par marque modèle...')
+
+                    .col-lg-3.col-md-4.col-sm-12
+                        .flex
+                            .group-select
+                                button.btn.btn-default.dropdown-toggle.first(type='button', data-toggle='dropdown')
+                                    span#search_concept Vieux
+                                    span.caret
+                                ul.dropdown-menu(role='menu')
+                                    li
+                                      a(href='#contains') Contains
+                                    li
+                                      a(href='#its_equal') It's equal
+                                    li
+                                      a(href='#greather_than') Greather than >
+                                    li
+                                      a(href='#less_than') Less than < 
+                                    li.divider
+                                    li
+                                      a(href='#all') Anything
+                            .group-select
+                                button.btn.btn-default.dropdown-toggle.second(type='button', data-toggle='dropdown')
+                                    span#search_concept Km max
+                                    span.caret
+                                ul.dropdown-menu(role='menu')
+                                    li
+                                      a(href='#contains') Km
+                                    li
+                                      a(href='#its_equal') It's equal
+                                    li
+                                      a(href='#greather_than') Greather than >
+                                    li
+                                      a(href='#less_than') Less than < 
+                                    li.divider
+                                    li
+                                      a(href='#all') Anything
+                            .group-select
+                                button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span#search_concept Prix max
+                                    span.caret
+                                ul.dropdown-menu(role='menu')
+                                    li
+                                      a(href='#contains') Prix
+                                    li
+                                      a(href='#its_equal') It's equal
+                                    li
+                                      a(href='#greather_than') Greather than >
+                                    li
+                                      a(href='#less_than') Less than < 
+                                    li.divider
+                                    li
+                                      a(href='#all') Anything
+                        .clearfix
+
+                    .col-md-3.col-sm-12
+                        .btn-search.pull-right
+                          button.btn.btn-default(type='button') Rechercher
+                            span avec nos partenaires
+                            //span.glyphicon.glyphicon-search
+                
+    br/
+    br/
+    br/
+                

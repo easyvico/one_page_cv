@@ -1,0 +1,9 @@
+.container#content {
+    background: orange;
+    
+    .btn-search {
+        >button {
+            background: violet;
+        }
+    }
+}

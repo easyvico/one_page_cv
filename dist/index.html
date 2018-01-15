@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tribute to Node.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="css/all.css" rel="stylesheet">
+    <!--link(href="css/searchbar.css")-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="content" class="container">
+      <form name="search" method="post" action="https://achatvente.coachautomaif.fr/?site=coachauto">
+        <div class="container-fluid">
+          <div class="row no-padding">
+            <div class="col-lg-6 col-md-5 col-sm-12">
+              <input id="search_param" type="hidden" name="search_param" value="all">
+              <input type="text" name="x" placeholder="Rechercher une voiture par marque modèle..." class="form-control">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="flex">
+                <div class="group-select">
+                  <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle first"><span id="search_concept">Vieux</span><span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu">
+                    <li><a href="#contains">Contains</a></li>
+                    <li><a href="#its_equal">It's equal</a></li>
+                    <li><a href="#greather_than">Greather than ></a></li>
+                    <li><a href="#less_than">Less than < </a></li>
+                    <li class="divider"></li>
+                    <li><a href="#all">Anything</a></li>
+                  </ul>
+                </div>
+                <div class="group-select">
+                  <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle second"><span id="search_concept">Km max</span><span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu">
+                    <li><a href="#contains">Km</a></li>
+                    <li><a href="#its_equal">It's equal</a></li>
+                    <li><a href="#greather_than">Greather than ></a></li>
+                    <li><a href="#less_than">Less than < </a></li>
+                    <li class="divider"></li>
+                    <li><a href="#all">Anything</a></li>
+                  </ul>
+                </div>
+                <div class="group-select">
+                  <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span id="search_concept">Prix max</span><span class="caret"></span></button>
+                  <ul role="menu" class="dropdown-menu">
+                    <li><a href="#contains">Prix</a></li>
+                    <li><a href="#its_equal">It's equal</a></li>
+                    <li><a href="#greather_than">Greather than ></a></li>
+                    <li><a href="#less_than">Less than < </a></li>
+                    <li class="divider"></li>
+                    <li><a href="#all">Anything</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <div class="btn-search pull-right">
+                <button type="button" class="btn btn-default">Rechercher<span>avec nos partenaires</span>
+                  <!--span.glyphicon.glyphicon-search-->
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div><br><br><br>
+  </body>
+</html>
